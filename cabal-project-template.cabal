@@ -1,0 +1,51 @@
+cabal-version:   3.0
+name:            cabal-project-template
+version:         0.1.0.0
+
+-- synopsis:
+-- description:
+license:         MIT
+license-file:    LICENSE
+author:          etoal83
+maintainer:      etoal83@gmail.com
+
+-- copyright:
+build-type:      Simple
+extra-doc-files: CHANGELOG.md
+
+-- extra-source-files:
+
+common shared
+  ghc-options:
+    -Wall -Wincomplete-uni-patterns -Wincomplete-record-updates
+    -Wmissing-import-lists -Wcompat
+
+  default-language: GHC2021
+  build-depends:    base ^>=4.18.3.0
+
+library
+  import:          shared
+  hs-source-dirs:  src
+  exposed-modules: MyLib
+
+-- other-modules:
+-- other-extensions:
+
+executable cabal-project-template
+  import:         shared
+  hs-source-dirs: app
+  main-is:        Main.hs
+
+  -- other-modules:
+  -- other-extensions:
+  build-depends:  cabal-project-template
+
+test-suite cabal-project-template-test
+  import:         shared
+  hs-source-dirs: test
+  main-is:        Main.hs
+  type:           exitcode-stdio-1.0
+
+  -- other-modules:
+  -- other-extensions:
+  build-depends:  cabal-project-template
