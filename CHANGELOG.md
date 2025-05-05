@@ -1,4 +1,4 @@
-# Revision history for cabal-project-template
+# Revision history for experiments-in-code
 
 ## 0.1.0.0 -- YYYY-mm-dd
 

@@ -1,5 +1,5 @@
 cabal-version:   3.0
-name:            cabal-project-template
+name:            experiments-in-code
 version:         0.1.0.0
 
 -- synopsis:
@@ -31,16 +31,16 @@ library
 -- other-modules:
 -- other-extensions:
 
-executable cabal-project-template
+executable experiments-in-code
   import:         shared
   hs-source-dirs: app
   main-is:        Main.hs
 
   -- other-modules:
   -- other-extensions:
-  build-depends:  cabal-project-template
+  build-depends:  experiments-in-code
 
-test-suite cabal-project-template-test
+test-suite experiments-in-code-test
   import:         shared
   hs-source-dirs: test
   main-is:        Main.hs
@@ -48,4 +48,4 @@ test-suite cabal-project-template-test
 
   -- other-modules:
   -- other-extensions:
-  build-depends:  cabal-project-template
+  build-depends:  experiments-in-code

@@ -1,10 +1,10 @@
 cradle:
   cabal:
     - path: "src"
-      component: "lib:cabal-project-template"
+      component: "lib:experiments-in-code"
 
     - path: "app/Main.hs"
-      component: "cabal-project-template:exe:cabal-project-template"
+      component: "experiments-in-code:exe:experiments-in-code"
 
     - path: "test"
-      component: "cabal-project-template:test:cabal-project-template-test"
+      component: "experiments-in-code:test:experiments-in-code-test"
