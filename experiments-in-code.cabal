@@ -31,7 +31,7 @@ library
 -- other-modules:
 -- other-extensions:
 
-executable experiments-in-code
+executable expic
   import:         shared
   hs-source-dirs: app
   main-is:        Main.hs
