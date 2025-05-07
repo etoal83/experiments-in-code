@@ -21,12 +21,12 @@ common shared
     -Wmissing-import-lists -Wcompat
 
   default-language: GHC2021
-  build-depends:    base ^>=4.18.3.0
+  build-depends:    base ^>=4.18.3.0, gnuplot
 
 library
   import:          shared
   hs-source-dirs:  src
-  exposed-modules: MyLib
+  exposed-modules: Experiments
 
 -- other-modules:
 -- other-extensions:
